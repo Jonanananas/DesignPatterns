@@ -18,6 +18,6 @@ public class Jasper {
 
     @Override
     public String toString() {
-        return "Jasper: Minulla on päälläni " + jeans + ", " + tShirt + ", " + cap + " and " + shoes;
+        return "Jasper: Minulla on päälläni " + jeans + ", " + tShirt + ", " + cap + " ja " + shoes;
     }
 }

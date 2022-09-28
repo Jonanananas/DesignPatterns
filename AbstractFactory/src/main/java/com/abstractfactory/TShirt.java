@@ -1,14 +1,6 @@
 package com.abstractfactory;
 
-public class TShirt {
-    String merkki;
-
-    public TShirt(String merkki){
-        this.merkki = merkki;
-    }
-
+public interface TShirt {
     @Override
-    public String toString() {
-        return merkki + " t-paita";
-    }
+    String toString();
 }

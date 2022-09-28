@@ -1,14 +1,6 @@
 package com.abstractfactory;
 
-public class Jeans {
-    String merkki;
-
-    public Jeans(String merkki){
-        this.merkki = merkki;
-    }
-
+public interface Jeans {
     @Override
-    public String toString() {
-        return merkki + " farmarit";
-    }
+    String toString();
 }

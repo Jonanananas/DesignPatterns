@@ -2,18 +2,18 @@ package com.abstractfactory;
 
 public class AdidasClothesFactory implements ClothesFactory {
     public Jeans wearJeans() {
-        return new Jeans("Adidas");
+        return new AdidasJeans();
     }
 
     public TShirt wearTShirt() {
-        return new TShirt("Adidas");
+        return new AdidasTShirt();
     }
 
     public Cap wearCap() {
-        return new Cap("Adidas");
+        return new AdidasCap();
     }
 
     public Shoes wearShoes() {
-        return new Shoes("Adidas");
+        return new AdidasShoes();
     }
 }
