@@ -13,19 +13,19 @@ public class BossClothesFactory implements ClothesFactory {
         return INSTANCE;
     }
 
-    public Jeans wearJeans() {
-        return new Jeans("Boss");
+    public BossJeans wearJeans() {
+        return new BossJeans();
     }
 
-    public TShirt wearTShirt() {
-        return new TShirt("Boss");
+    public BossTShirt wearTShirt() {
+        return new BossTShirt();
     }
 
-    public Cap wearCap() {
-        return new Cap("Boss");
+    public BossCap wearCap() {
+        return new BossCap();
     }
 
-    public Shoes wearShoes() {
-        return new Shoes("Boss");
+    public BossShoes wearShoes() {
+        return new BossShoes();
     }
 }

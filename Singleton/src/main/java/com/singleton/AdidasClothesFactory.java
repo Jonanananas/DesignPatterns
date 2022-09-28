@@ -13,19 +13,19 @@ public class AdidasClothesFactory implements ClothesFactory {
         return INSTANCE;
     }
 
-    public Jeans wearJeans() {
-        return new Jeans("Adidas");
+    public AdidasJeans wearJeans() {
+        return new AdidasJeans();
     }
 
-    public TShirt wearTShirt() {
-        return new TShirt("Adidas");
+    public AdidasTShirt wearTShirt() {
+        return new AdidasTShirt();
     }
 
-    public Cap wearCap() {
-        return new Cap("Adidas");
+    public AdidasCap wearCap() {
+        return new AdidasCap();
     }
 
-    public Shoes wearShoes() {
-        return new Shoes("Adidas");
+    public AdidasShoes wearShoes() {
+        return new AdidasShoes();
     }
 }

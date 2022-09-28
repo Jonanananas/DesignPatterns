@@ -1,14 +1,6 @@
 package com.singleton;
 
-public class Cap {
-    public String merkki;
-
-    public Cap(String merkki) {
-        this.merkki = merkki;
-    }
-
+public interface Cap {
     @Override
-    public String toString() {
-        return merkki + " lippis";
-    }
+    String toString();
 }
