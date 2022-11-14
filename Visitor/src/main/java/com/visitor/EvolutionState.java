@@ -10,8 +10,4 @@ abstract class EvolutionState {
     abstract int getExperience();
 
     abstract void printStatus();
-
-    void evolve(Pokemon c, EvolutionState s) {
-        c.evolve(s);
-    }
 }
