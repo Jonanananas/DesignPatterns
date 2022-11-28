@@ -6,14 +6,14 @@ public class ComputerFacade {
   private Memory memory;
   private HardDrive harddrive;
 
-  public void Start() {
+  public void start() {
     memory = new Memory();
     cpu = new CPU(memory);
     harddrive = new HardDrive();
     long kBootAddress = 0xbfc00000;
-    cpu.Freeze();
-    memory.Load(kBootAddress, harddrive.Read(0, 512));
-    cpu.Jump(kBootAddress);
-    cpu.Execute();
+    cpu.freeze();
+    memory.load(kBootAddress, harddrive.read(0, 512));
+    cpu.jump(kBootAddress);
+    cpu.execute();
   }
 }

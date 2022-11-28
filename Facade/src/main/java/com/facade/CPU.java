@@ -8,16 +8,16 @@ public class CPU {
     this.memory = memory;
   }
 
-  void Freeze() {
+  void freeze() {
     System.out.println("*CPU freezes*");
   }
 
-  void Jump(long position) {
+  void jump(long position) {
     System.out.println("CPU jumps to position " + position);
     this.position = position;
   }
 
-  void Execute() {
+  void execute() {
     System.out.println("Printing data...");
     for (char c : memory.getChars()) {
       System.out.println("Position: " + position + "\nData: " + c + "\n");

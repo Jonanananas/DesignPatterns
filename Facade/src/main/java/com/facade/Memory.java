@@ -7,7 +7,7 @@ public class Memory {
     return chars;
   }
 
-  void Load(long position, char[] data) {
+  void load(long position, char[] data) {
     System.out.println("Loading data to memory...");
     System.arraycopy(data, 0, chars, 0, 4);
   }

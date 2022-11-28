@@ -4,7 +4,7 @@ public class HardDrive {
   char[] sector0 = { 'b', 'o', 'o', 't' };
   char[] sector1 = { 'd', 'a', 't', 'a' };
 
-  char[] Read(long lba, int size) {
+  char[] read(long lba, int size) {
     System.out.println("Reading data from hard drive...");
     char[] returnArr;
 
