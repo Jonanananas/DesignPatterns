@@ -4,18 +4,16 @@ import java.util.Iterator;
 
 public class IteratorThread extends Thread {
     Iterator<Integer> it;
-    String name;
     Collection collection;
 
-    public IteratorThread(Collection collection, String name) {
+    public IteratorThread(Collection collection) {
         it = collection.getIntList().iterator();
-        this.name = name;
         this.collection = collection;
     }
 
     public void run() {
         while (it.hasNext()) {
-            System.out.println(name + ": " + it.next());
+            System.out.println(Thread.currentThread().getName() + ": " + it.next());
         }
     }
 }

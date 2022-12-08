@@ -4,18 +4,16 @@ import java.util.Iterator;
 
 public class IteratorRemoveThread extends Thread {
     Iterator<Integer> it;
-    String name;
     Collection collection;
 
-    public IteratorRemoveThread(Collection collection, String name) {
+    public IteratorRemoveThread(Collection collection) {
         it = collection.getIntList().iterator();
-        this.name = name;
         this.collection = collection;
     }
 
     public void run() {
         while (it.hasNext()) {
-            System.out.println(name + ": " + it.next());
+            System.out.println(Thread.currentThread().getName() + ": " + it.next());
             it.remove();
         }
     }
